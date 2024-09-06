@@ -1,0 +1,82 @@
+{
+  "overViewNumberAndText": [
+    { "id": 1, "number": "250+", "text": "Investors" },
+    { "id": 2, "number": "25+", "text": "Blockchain Expert" },
+    { "id": 3, "number": "5+", "text": "Years Of Experience" }
+  ],
+
+  "features": [
+    { "id": 1, "text": "Ideal for a family of 5 or 6" },
+    { "id": 2, "text": "Top-notch construction quality, modern design, and upscale finishes" },
+    {
+      "id": 3,
+      "text": "Easy access to major amenities such as shopping malls, restaurants, parks, schools, and public transportation."
+    },
+    {
+      "id": 4,
+      "text": "24/7 security surveillance, controlled access points, and a professional property management team."
+    },
+    {
+      "id": 5,
+      "text": "Guaranteed durability for one years"
+    }
+  ],
+
+  "testimonials": [
+    {
+      "id": 1,
+      "header": "Straightfoward & Great Platform ",
+      "text": "Tokenized real estate is a game-changer! I love how I can invest in properties worldwide without the hassle of managing them. The platform is user-friendly, and the returns have been fantastic",
+      "name": "Adetayo. AA",
+      "occupation": "Banker",
+      "image": "/images/adetayo.png"
+    },
+    {
+      "id": 2,
+      "header": "Highly Recommended",
+      "text": "I have always wanted to invest in real estate, but the high entry barriers and lack of liquidity deterred me. That's when I found this tokenized real estate investment website. It's been a game-changer! I can now easily diversify my portfolio with fractional ownership, and the ability to trade tokens provides great liquidity.must",
+      "name": "Micheal Tims",
+      "occupation": "Forex Trader",
+      "image": "/images/micheal-tims.png"
+    },
+    {
+      "id": 3,
+      "header": "Easy and Secure",
+      "text": "As a first-time investor, I was initially skeptical about tokenized real estate. However, this platform exceeded my expectations. The customer support team guided me through the process, and now I feel confident in my investment choices.",
+      "name": "Teniola. AG",
+      "occupation": "Product Designer",
+      "image": "/images/teniola.png"
+    },
+    {
+      "id": 4,
+      "header": "Eye Opener",
+      "text": "I've been investing in traditional real estate for years, but this platform opened up a whole new world of opportunities. Tokenization allows for fractional ownership and increased liquidity. It's a revolution in the real estate industry",
+      "name": "Olamide Belo",
+      "occupation": "CEO TWears",
+      "image": "/images/olamide-bello.png"
+    }
+  ],
+
+  "blog": [
+    {
+      "image": "/images/Focused Student.png",
+      "title": "Understanding Tokenized Real Estate Investments: A Beginner's Guide",
+      "text": "A person writing in a notebook with a pen"
+    },
+    {
+      "image": "/images/Virtual Reality Exploration.png",
+      "title": "Evaluating the Potential Returns of Tokenized Real Estate Investments",
+      "text": "A person wearing a virtual reality headset, interacting with a digital interface projected in front of them"
+    },
+    {
+      "image": "/images/Contemporary Study.png",
+      "title": "The Role of Smart Contracts in Tokenized Real Estate Investments",
+      "text": "An individual sitting on a chair, holding a tablet, with their face obscured by pixelation"
+    },
+    {
+      "image": "/images/Upward Trend.png",
+      "title": "Analyzing Market Trends for Tokenized Real Estate Investments",
+      "text": "A hand holding a piece of paper with an upward arrow symbol in front of a tall building skyline."
+    }
+  ]
+}
