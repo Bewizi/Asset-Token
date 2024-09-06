@@ -3,8 +3,12 @@ import { ref } from 'vue'
 import { useToast } from 'vue-toastification'
 import SmartHomeTechnology from '../../assets/images/general/Smart Home Technology Concept.png'
 import Button from '../../components/Button.vue'
+import Modal from '../../components/Modal.vue'
 
 const toast = useToast()
+
+// Modal visibility state
+const isModalVisible = ref(false)
 
 const formInput = ref({
   fullName: '',
@@ -93,6 +97,9 @@ const handleSubmit = () => {
     formInput.value.phoneNumber = ''
     formInput.value.password = ''
 
+    // Show modal on successful form submission
+    isModalVisible.value = true
+
     return `Form Submitted: ${formInput.value}`
   } else {
     toast.error('Form has errors')
@@ -108,7 +115,7 @@ const showPassword = () => {
 </script>
 
 <template>
-  <section class="max-w-7xl mx-auto mt-20">
+  <section class="max-w-7xl mx-auto mt-20 relative">
     <section class="flex items-center justify-center px-5 md:px-0 lg:justify-between">
       <div>
         <div class="text-center mb-10">
@@ -220,6 +227,7 @@ const showPassword = () => {
       </figure>
     </section>
   </section>
+  <Modal v-if="isModalVisible" @close="isModalVisible = false" />
 </template>
 
 <style scoped>
