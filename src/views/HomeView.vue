@@ -14,7 +14,7 @@ import Newsletter from '@/pages/HomePage/Newsletter.vue'
 
 <template>
   <NavBar />
-  <main class="dark:bg-slate-700 dark:text-white pb-20">
+  <main class="dark:bg-slate-700 dark:text-white pb-20 min-h-screen">
     <HeroSection />
     <OverView />
 
