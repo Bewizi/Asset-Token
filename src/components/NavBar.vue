@@ -82,7 +82,7 @@ onMounted(() => {
         <!-- Logo -->
         <RouterLink :to="{ name: 'home' }">
           <figure class="flex items-center gap-2">
-            <img :src="Logo" alt="Logo" class="w-16" />
+            <img :src="Logo" alt="Logo" class="w-10 md:w-16" />
             <h1 class="font-GoldWest text-OxfordBlue text-2xl dark:text-white">AssetToken</h1>
           </figure>
         </RouterLink>

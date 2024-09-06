@@ -78,5 +78,32 @@
       "title": "Analyzing Market Trends for Tokenized Real Estate Investments",
       "text": "A hand holding a piece of paper with an upward arrow symbol in front of a tall building skyline."
     }
+  ],
+  "benefitsOfTokenization": [
+    {
+      "id": 1,
+      "header": "Reduced Costs",
+      "description": "Tokenized real estate investments can lower costs associated with traditional real estate transactions. By eliminating intermediaries, such as brokers and custodians, tokenization reduces fees and administrative expenses"
+    },
+    {
+      "id": 2,
+      "header": "Global Access",
+      "description": "Global Tokenization enables real estate assets to be accessed and traded globally, eliminating geographical limitations. Investors from different countries can participate in tokenized offerings, allowing for increased market efficiency and exposure to international real estate markets"
+    },
+    {
+      "id": 3,
+      "header": "Increased Liquidity",
+      "description": "Tokenization allows real estate assets to be divided into smaller, tradable tokens. This fractional ownership enables investors to buy and sell tokens easily, increasing liquidity in the market."
+    },
+    {
+      "id": 4,
+      "header": "Enhanced Transparency",
+      "description": "Blockchain technology, which underlies tokenization, offers improved transparency and traceability. The use of smart contracts ensures that ownership rights and investment terms are recorded on a decentralized and immutable ledger."
+    },
+    {
+      "id": 5,
+      "header": "Continuous Income Stream",
+      "description": "Tokenized real estate investments allow investors to participate in income streams, as rental income or profits from property sales can be distributed directly to token holders, providing a consistent and passive income source"
+    }
   ]
 }

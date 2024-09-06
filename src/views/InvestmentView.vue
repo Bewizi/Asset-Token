@@ -1,26 +1,15 @@
 <script setup>
-import { ref } from 'vue'
-
-const show = ref(true)
+import Navbar from '../components/NavBar.vue'
+import Footer from '../components/Footer.vue'
+import HerSection from '../pages/InvestmentPage/HeroSection.vue'
+import BenefitsofTokenization from '../pages/InvestmentPage/BenefitsofTokenization.vue'
 </script>
 
 <template>
-  <button @click="show = !show">Toggle</button>
-  <Transition>
-    <p v-if="show">hello</p>
-  </Transition>
-  <h1>Investment</h1>
+  <Navbar />
+  <main class="dark:bg-slate-700 dark:text-white pb-20 min-h-screen">
+    <HerSection />
+    <BenefitsofTokenization />
+  </main>
+  <Footer />
 </template>
-
-<style scoped>
-/* we will explain what these classes do next! */
-.v-enter-active,
-.v-leave-active {
-  transition: opacity 0.5s ease;
-}
-
-.v-enter-from,
-.v-leave-to {
-  opacity: 0;
-}
-</style>
