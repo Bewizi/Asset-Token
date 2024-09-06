@@ -99,7 +99,7 @@ const showPassword = () => {
 
 <template>
   <section class="max-w-7xl mx-auto mt-20">
-    <section class="flex items-center justify-between">
+    <section class="flex items-center justify-center px-5 md:px-0 lg:justify-between">
       <div>
         <div class="text-center mb-10">
           <h1 class="text-OxfordBlue font-bold text-4xl mb-2">Create Account</h1>
@@ -202,7 +202,7 @@ const showPassword = () => {
         </div>
       </div>
 
-      <figure>
+      <figure class="hidden lg:block">
         <img
           :src="SmartHomeTechnology"
           alt="An isometric illustration of a modern, two-story smart home"
