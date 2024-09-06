@@ -1,7 +1,10 @@
 <script setup>
 import { ref } from 'vue'
+import { useToast } from 'vue-toastification'
 import Logo from '../../assets/images/assset-token-logo.png'
 import Button from '../../components/Button.vue'
+
+const toast = useToast()
 
 const formInput = ref({
   email: '',
@@ -39,19 +42,24 @@ const validatePassword = () => {
 
 const handleSubmit = () => {
   formInput.value
-  console.log(formInput.value.email)
-  console.log(formInput.value.password)
-  console.log('Form Submitted', formInput.value)
 
   //validate both email and password for submission
   validateEmail()
   validatePassword()
 
+  // Check if there are no errors
   if (!errors.value.email && !errors.value.password) {
-    console.log('Form Submitted', formInput.value)
     // proceed to login
+    toast.success('Login successful')
+
+    // Clear the form input fields after successful login
+    formInput.value.email = ''
+    formInput.value.password = ''
+
+    return `Form Submitted: ${formInput.value}`
   } else {
-    console.log('Form has errors:', errors.value)
+    toast.error('Form has errors')
+    return `Form has errors:${errors.value}`
   }
 }
 

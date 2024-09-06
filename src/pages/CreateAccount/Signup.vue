@@ -1,7 +1,10 @@
 <script setup>
 import { ref } from 'vue'
+import { useToast } from 'vue-toastification'
 import SmartHomeTechnology from '../../assets/images/general/Smart Home Technology Concept.png'
 import Button from '../../components/Button.vue'
+
+const toast = useToast()
 
 const formInput = ref({
   fullName: '',
@@ -67,9 +70,6 @@ const validatePassword = () => {
 // Form submitted
 const handleSubmit = () => {
   formInput.value
-  console.log(formInput.value.email)
-  console.log(formInput.value.password)
-  console.log('Form Submitted', formInput.value)
 
   //validate both email and password for submission
   validateName()
@@ -83,10 +83,20 @@ const handleSubmit = () => {
     !errors.value.password &&
     !errors.value.phoneNumber
   ) {
-    console.log('Form Submitted', formInput.value)
     // proceed to login
+
+    toast.success('Account created successful')
+
+    // Clear the form input fields after successful login
+    formInput.value.fullName = ''
+    formInput.value.email = ''
+    formInput.value.phoneNumber = ''
+    formInput.value.password = ''
+
+    return `Form Submitted: ${formInput.value}`
   } else {
-    console.log('Form has errors:', errors.value)
+    toast.error('Form has errors')
+    return `Form has errors:${errors.value}`
   }
 }
 
