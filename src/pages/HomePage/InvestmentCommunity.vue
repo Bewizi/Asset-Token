@@ -9,7 +9,7 @@ import TrioinSuits from '../../assets/images/community/Trio in Suits.png'
   <section class="max-w-7xl mx-auto mb-32">
     <div class="flex flex-wrap md:flex-nowrap min-h-[50vh]">
       <section class="bg-BlueRibbon md:p-24 rounded-tl-md">
-        <div class="pt-14 text-white text-center md:text-start">
+        <div class="pt-14 text-white text-center pb-14 md:text-start lg:pb-0">
           <h1 class="lg:max-w-7xl text-4xl md:text-6xl font-bold leading-normal mb-5">
             Join The Housing Revolution Today!
           </h1>

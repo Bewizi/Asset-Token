@@ -10,7 +10,7 @@ defineProps({
 </script>
 
 <template>
-  <button :class="defaultClass">
+  <button :class="[defaultClass]">
     {{ title }}
     <slot />
   </button>

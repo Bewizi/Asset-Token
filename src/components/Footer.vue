@@ -3,7 +3,7 @@ import Logo from '../assets/images/assset-token-logo.png'
 </script>
 
 <template>
-  <footer class="bg-RichBlack-primary text-white py-28">
+  <footer class="bg-RichBlack-primary text-white py-28 px-5 md:px-0">
     <div class="max-w-7xl mx-auto flex justify-between flex-wrap md:px-5 lg:px-0">
       <div class="w-full lg:w-1/4 px-4 mb-10 lg:mb-0">
         <div class="flex items-center mb-4">

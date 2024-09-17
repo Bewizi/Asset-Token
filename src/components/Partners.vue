@@ -1,4 +1,8 @@
-<script></script>
+<script setup>
+import { Vue3Marquee } from 'vue3-marquee'
+
+const listOfpartner = ['Hedera', 'Polkadot', 'Ethereum', 'Ethereum', 'Avalanche']
+</script>
 
 <template>
   <section class="max-w-7xl mx-auto mb-32">
@@ -8,15 +12,19 @@
       >
         Our Partner
       </h3>
-      <div>
+      <div class="overflow-hidden w-full">
         <ul
-          class="text-Glaucous space-x-2 flex md:space-x-20 md:text-lg md:font-semibold dark:text-white"
+          class="text-Glaucous space-x-2 flex md:space-x-20 md:text-lg md:font-semibold md:gap-0 dark:text-white"
         >
-          <li>Hedera</li>
-          <li>Polkadot</li>
-          <li>Ethereum</li>
-          <li>Substrat</li>
-          <li>Avalanche</li>
+          <Vue3Marquee>
+            <li
+              v-for="(partners, index) in listOfpartner"
+              :key="index"
+              class="overflow-x-hidden mr-8 lg:mr-20 lg:text-2xl"
+            >
+              {{ partners }}
+            </li>
+          </Vue3Marquee>
         </ul>
       </div>
     </div>

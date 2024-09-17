@@ -16,7 +16,7 @@ onMounted(async () => {
 </script>
 
 <template>
-  <section class="max-w-7xl mx-auto px-5 lg:px-0">
+  <section class="max-w-7xl mx-auto px-5 lg:px-0 mb-32">
     <div class="flex items-center justify-center mb-10">
       <h1
         class="text-2xl text-center leading-normal md:text-4xl text-OxfordBlue font-bold max-w-xl md:leading-normal mb-2 dark:text-white"
